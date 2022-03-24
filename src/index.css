@@ -12,22 +12,46 @@
     hover:bg-transparent hover:text-indigo-600 rounded-lg
     hover:transition duration-700 ease-[cubic-bezier(.25,1,.25,1)] font-sans;
   }
+
+  html {
+    @apply scroll-smooth;
+  }
 }
 /* Code for underline animation  */
-   .link-underline {
-        border-bottom-width: 0;
-        background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
-        background-size: 0 3px;
-        background-position: 0 100%;
-        background-repeat: no-repeat;
-        transition: background-size .5s ease-in-out;
-    }
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+}
 
-    .link-underline-black {
-        background-image: linear-gradient(transparent, transparent), linear-gradient(#5146EE, #5146EE)
-    }
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#5146ee, #5146ee);
+}
 
-    .link-underline:hover {
-        background-size: 100% 3px;
-        background-position: 0 100%
-    }
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%;
+}
+
+/* down arrow animation */
+.arrow {
+  cursor: pointer;
+  transition: ease-in-out 1s;
+  animation: down 1s ease-in-out infinite;
+}
+
+@keyframes down {
+  0%,
+  100% {
+    transform: translate(1px, 1px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}

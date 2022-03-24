@@ -3,5 +3,6 @@ module.exports = {
   theme: {
     extend: {},
   },
+  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   plugins: [],
 };
