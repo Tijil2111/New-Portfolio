@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
@@ -11,17 +12,16 @@ export const Navbar = () => {
   return (
     <div className="bg-zinc-200 h-[80px] flex items-center shadow-md">
       <h1
-        className="text-indigo-600 px-5 text-2xl cursor-pointer hover:text-indigo-700 hover:transition duration-700 ease-[cubic-bezier(.25,1,.25,1)] font-sans
-"
+        className="text-indigo-600 px-5 text-2xl cursor-pointer hover:text-indigo-700 hover:transition duration-700 ease-[cubic-bezier(.25,1,.25,1)] font-sans  "
       >
         Tijil Agrawal
       </h1>
 
-      <ul className=" hidden md:flex ml-auto font-sans gap-5">
-        <button className="px-8 py-3">About</button>
-        <button className="px-8 py-3">Skills</button>
-        <button className="px-8 py-3">Projects</button>
-        <button className="px-8 py-3">Contact</button>
+      <ul className=" hidden md:flex ml-auto font-sans gap-5 px-5">
+        <a className="px-8 py-3 link-underline link-underline-black text-black" href="#home">About</a>
+        <a className="px-8 py-3 link link-underline link-underline-black text-black">Skills</a>
+        <a className="px-8 py-3 link link-underline link-underline-black text-black">Projects</a>
+        <button className="px-8 py-3  ">Contact</button>
       </ul>
       <div
         className=" ml-auto px-10 md:hidden text-indigo-600"
@@ -37,16 +37,13 @@ export const Navbar = () => {
             : "bg-zinc-200 flex flex-col absolute w-screen top-20 gap-9 px-32 z-10"
         }
       >
-        <button className="px-8 py-3 text-center">About</button>
-        <button className="px-8 py-3 text-center">Skills</button>
-        <button className="px-8 py-3 text-center">Projects</button>
+        <a className="px-8 py-3 text-center link link-underline link-underline-black text-black">About</a>
+        <a className="px-8 py-3 text-center link link-underline link-underline-black text-black">Skills</a>
+        <a className="px-8 py-3 text-center link link-underline link-underline-black text-black">Projects</a>
         <button className="px-10 py-3 text-center">Contact</button>
       </ul>
     </div>
   );
 };
-// {
-//   !nav ? "hidden" : "absolute bg-zinc-200 w-screen px-8";
-// }
-
-// flex ml-auto font-sans gap-5
+// apply these styles for the underline animation
+//link link-underline link-underline-black text-black
