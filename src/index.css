@@ -55,3 +55,14 @@
     transform: translateY(-15px);
   }
 }
+
+.card-row {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .card-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}

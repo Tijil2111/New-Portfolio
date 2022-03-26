@@ -7,14 +7,14 @@ import { Fade } from "react-awesome-reveal";
 export const About = () => {
   return (
     <div className="py-64 h-[100vh]" id="about">
-      <Fade>
+      <Fade delay={500} triggerOnce>
         <h2 className="text-center">
           <span className="text-3xl  text-indigo-600 link link-underline link-underline-black p-2">
             About Me
           </span>
         </h2>
       </Fade>
-      <Fade>
+      <Fade delay={1000} triggerOnce>
         <div className="flex flex-col lg:flex-row ">
           <img
             src={pic}

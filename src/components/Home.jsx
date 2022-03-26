@@ -9,7 +9,7 @@ import "../index.css";
 export const Home = () => {
   return (
     <>
-      <div id="#home" className="flex">
+      <div id="home" className="flex">
         <div className="flex flex-col md:ml-14 ml-10 mt-64">
           <h1 className="text-2xl py-2 flex md:text-5xl">
             <span className="text-indigo-600 px-2 link link-underline link-underline-black">
