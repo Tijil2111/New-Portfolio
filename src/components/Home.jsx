@@ -1,5 +1,5 @@
 import React from "react";
-import Typewriter from "typewriter-effect";
+import { Typer } from "../Extra/Typer";
 import { BsGithub, BsLinkedin, BsYoutube } from "react-icons/bs";
 import { FaAngleDown } from "react-icons/fa";
 import "../index.css";
@@ -20,37 +20,7 @@ export const Home = () => {
           <h2 className="flex md:text-4xl text-xl px-2">
             I am
             <span className="px-2 text-indigo-600">
-              <Typewriter
-                options={{
-                  autoStart: true,
-                  loop: true,
-                }}
-                onInit={(typewriter) => {
-                  typewriter
-
-                    .typeString("an App Developer")
-
-                    .pauseFor(1000)
-                    .deleteAll()
-                    .typeString("a Web Developer")
-                    .pauseFor(1000)
-                    .deleteAll()
-                    .typeString("a Movie Maker")
-                    .pauseFor(1000)
-                    .deleteAll()
-                    .typeString("an eSpician")
-                    .pauseFor(1000)
-                    .deleteAll()
-                    .typeString("a Besite")
-                    .pauseFor(1000)
-                    .deleteAll()
-                    .typeString("a weeb")
-                    .pauseFor(1000)
-                    .deleteAll()
-                    .typeString("an Anime Lover")
-                    .start();
-                }}
-              />
+              <Typer />
             </span>
           </h2>
           <div className="text-indigo-600 text-2xl flex px-2 gap-5 py-10 ">

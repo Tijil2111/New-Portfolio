@@ -1,18 +1,17 @@
-import { Home } from "./components/Home";
-import { Navbar } from "./components/Navbar";
-import AnimatedCursor from "react-animated-cursor";
-import { About } from "./components/About";
-import { Skills } from "./components/Skills";
+import React, { useState, useEffect } from "react";
+import { All } from "./Extra/All";
+
+import { Loading } from "./Extra/Loading";
 
 function App() {
+  const [loading, setLoading] = useState(undefined);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(true);
+    }, 4000);
+  }, []);
   return (
-    <div className="scroll-smooth">
-      <AnimatedCursor color="81, 70, 238" />
-      <Navbar />
-      <Home />
-      <About />
-      <Skills />
-    </div>
+    <div className="scroll-smooth">{!loading ? <Loading /> : <All />}</div>
   );
 }
 
