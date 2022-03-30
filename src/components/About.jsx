@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 
 export const About = () => {
   return (
-    <div className="py-64 h-[100vh]" id="about">
+    <div className="pt-40 h-[100vh]" id="about">
       <Fade delay={500} triggerOnce>
         <h2 className="text-center">
           <span className="text-3xl  text-indigo-600 link link-underline link-underline-black p-2">

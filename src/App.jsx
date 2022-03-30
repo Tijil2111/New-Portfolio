@@ -10,9 +10,7 @@ function App() {
       setLoading(true);
     }, 4000);
   }, []);
-  return (
-    <div className="scroll-smooth">{!loading ? <Loading /> : <All />}</div>
-  );
+  return <div>{!loading ? <Loading /> : <All />}</div>;
 }
 
 export default App;

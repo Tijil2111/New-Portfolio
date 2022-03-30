@@ -1,7 +1,7 @@
 import React from "react";
 import { Typer } from "../Extra/Typer";
 import { BsGithub, BsLinkedin, BsYoutube } from "react-icons/bs";
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa";
 import "../index.css";
 
 //BsGithub, BsLinkedin, BsYoutube, FaAngleDown
@@ -38,7 +38,7 @@ export const Home = () => {
       </div>
       <div className="flex justify-center mt-40">
         <a href="#about">
-          <FaAngleDown className="arrow text-6xl text-indigo-600" />
+          <FaAngleRight className="arrow text-6xl text-indigo-600" />
         </a>
       </div>
     </>
