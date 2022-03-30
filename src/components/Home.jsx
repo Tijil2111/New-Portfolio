@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Typer } from "../Extra/Typer";
 import { BsGithub, BsLinkedin, BsYoutube } from "react-icons/bs";
 import { FaAngleRight } from "react-icons/fa";
 import "../index.css";
+import { Outlet, Link } from "react-router-dom";
 
 //BsGithub, BsLinkedin, BsYoutube, FaAngleDown
 
@@ -37,10 +39,13 @@ export const Home = () => {
         </div>
       </div>
       <div className="flex justify-center mt-40">
-        <a href="#about">
-          <FaAngleRight className="arrow text-6xl text-indigo-600" />
+        <a>
+          <Link to="/about">
+            <FaAngleRight className="arrow text-6xl text-indigo-600" />
+          </Link>
         </a>
       </div>
+      <Outlet />
     </>
   );
 };

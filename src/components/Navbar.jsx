@@ -49,21 +49,15 @@ export const Navbar = () => {
               : "bg-zinc-200 flex flex-col absolute w-screen top-20 gap-9 px-32 z-20 py-10"
           }
         >
-          <a
-            className="px-8 py-3 text-center link link-underline link-underline-black text-black"
-            href="#about"
-          >
-            About
+          <a className="px-8 py-3 text-center link link-underline link-underline-black text-black">
+            <Link to="/about">About</Link>
           </a>
 
-          <a
-            className="px-8 py-3 text-center link link-underline link-underline-black text-black"
-            href="#skills"
-          >
-            Skills
+          <a className="px-8 py-3 text-center link link-underline link-underline-black text-black">
+            <Link to="/skills">Skills</Link>
           </a>
           <a className="px-8 py-3 text-center link link-underline link-underline-black text-black">
-            Projects
+            <Link to="/projects">Projects</Link>
           </a>
           <button className="px-10 py-3 text-center">Contact</button>
         </ul>
