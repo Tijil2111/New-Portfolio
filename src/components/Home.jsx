@@ -15,7 +15,7 @@ export const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowToast(true);
-    }, 100000);
+    }, 4000);
   });
 
   const onClose = () => {
