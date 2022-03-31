@@ -9,18 +9,18 @@ export const ErrorPage = () => {
   console.log(ddd);
 
   return (
-    <div>
-      <div className="pt-40 pl-32 text-7xl text-indigo-600">Oops !</div>
-      <div className="pt-10 p-32 text-xl text-black">
+    <div className="h-[100vh] bg-slate-900">
+      <div className="pt-40 pl-32 text-7xl text-teal-400">Oops !</div>
+      <div className="pt-10 p-32 text-xl text-black dark:text-white">
         We cant find the page you requested !
       </div>
-      <div className="pt-10 p-32 text-xl text-indigo-600">
+      <div className="pt-10 p-32 text-xl text-teal-400">
         The url you requested was - {ddd}
       </div>
       <div className="flex justify-center mt-20">
         <a>
           <Link to="/">
-            <FaAngleLeft className="arrow text-6xl text-indigo-600" />
+            <FaAngleLeft className="arrow text-6xl text-teal-400" />
           </Link>
         </a>
       </div>

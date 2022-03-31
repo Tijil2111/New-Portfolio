@@ -6,10 +6,10 @@ export const Loading = () => {
     <div className="flex h-screen dark:bg-slate-900">
       <div className="m-auto">
         <Bars
-          fill="#5046E5"
+          fill="#2dd4bf"
           strokeOpacity={0.125}
           speed={0.75}
-          className="text-indigo-600"
+          className="text-teal-400"
         />
       </div>
     </div>

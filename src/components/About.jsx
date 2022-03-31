@@ -9,7 +9,7 @@ export const About = () => {
     <div className="pt-40 h-[100vh] dark:bg-slate-900" id="about">
       <Fade delay={500} triggerOnce>
         <h2 className="text-center">
-          <span className="text-3xl  text-indigo-600 link link-underline link-underline-black p-2">
+          <span className="text-3xl  text-teal-400 link link-underline link-underline-black p-2">
             About Me
           </span>
         </h2>
@@ -24,7 +24,7 @@ export const About = () => {
           <div className="flex flex-col lg:mt-36">
             <h2 className="text-3xl text-center dark:text-white">
               I am an
-              <span className="text-indigo-600 p-3 link link-underline link-underline-black">
+              <span className="text-teal-400 p-3 link link-underline link-underline-black">
                 Indian
               </span>
             </h2>
@@ -33,7 +33,7 @@ export const About = () => {
                 I am a tech enthusiast with knowledge of various programming
                 languages and I love Maths and Physics. I was honoured when i
                 was admitted to my school's tech club{" "}
-                <span className="text-indigo-600 p-1 link link-underline link-underline-black">
+                <span className="text-teal-400 p-1 link link-underline link-underline-black">
                   eSpice
                 </span>
                 . eSpice is a place full of techies and like-minded people.

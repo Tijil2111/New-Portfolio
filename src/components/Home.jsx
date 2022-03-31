@@ -26,18 +26,18 @@ export const Home = () => {
       <div id="home" className="flex ">
         <div className="flex flex-col md:ml-14 ml-10 mt-64 ">
           <h1 className="text-2xl py-2 flex md:text-5xl dark:text-white">
-            <span className="text-indigo-600 px-2 link link-underline link-underline-black">
+            <span className="text-teal-400 px-2 link link-underline link-underline-black">
               Konnichiwa!
             </span>
             I am Tijil Agrawal
           </h1>
           <h2 className="flex md:text-4xl text-xl px-2 dark:text-white">
             I am
-            <span className="px-2 text-indigo-600">
+            <span className="px-2 text-teal-400">
               <Typer />
             </span>
           </h2>
-          <div className="text-indigo-600 text-2xl flex px-2 gap-5 py-10 ">
+          <div className="text-teal-400 text-2xl flex px-2 gap-5 py-10 ">
             <a href="https://github.com/">
               <BsGithub className="cursor-pointer " />
             </a>
@@ -53,7 +53,7 @@ export const Home = () => {
       <div className="flex justify-center mt-40">
         <a>
           <Link to="/about">
-            <FaAngleRight className="arrow text-6xl text-indigo-600" />
+            <FaAngleRight className="arrow text-6xl text-teal-400" />
           </Link>
         </a>
       </div>

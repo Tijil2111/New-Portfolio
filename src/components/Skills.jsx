@@ -15,7 +15,7 @@ export const Skills = () => {
       <div>
         <Fade triggerOnce>
           <h2 className="text-center">
-            <span className="text-3xl  text-indigo-600 link link-underline link-underline-black p-2">
+            <span className="text-3xl  text-teal-400 link link-underline link-underline-black p-2">
               Skills
             </span>
           </h2>
@@ -33,7 +33,7 @@ export const Skills = () => {
                     Building Apps with Flutter for Android is my main field of
                     interest. I have already made a few awesome apps and
                     recently published one on the Galaxy Store -
-                    <span className="text-indigo-600 p-1 link link-underline link-underline-black">
+                    <span className="text-teal-400 p-1 link link-underline link-underline-black">
                       Rirakkusu
                     </span>
                     . I absolutely love Flutter !

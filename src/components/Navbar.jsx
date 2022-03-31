@@ -13,9 +13,9 @@ export const Navbar = () => {
 
   return (
     <div>
-      <AnimatedCursor color="81, 70, 238" />
+      <AnimatedCursor color="45, 212, 191" />
       <div className="bg-zinc-200 h-[80px] flex items-center shadow-md fixed w-[100%] z-40 dark:bg-slate-900">
-        <h1 className="text-indigo-600 px-5 text-2xl cursor-pointer hover:text-indigo-700 hover:transition duration-700 ease-[cubic-bezier(.25,1,.25,1)] font-sans  ">
+        <h1 className="text-teal-400 px-5 text-2xl cursor-pointer hover:text-teal-300 hover:transition duration-700 ease-[cubic-bezier(.25,1,.25,1)] font-sans  ">
           <a href="" className="link link-underline link-underline-black p-2">
             {" "}
             <Link to="/">Tijil Agrawal</Link>
@@ -33,13 +33,10 @@ export const Navbar = () => {
           <a className="px-8 py-3 link link-underline link-underline-black text-black dark:text-white">
             <Link to="/projects">Projects</Link>
           </a>
-          <a className="px-8 py-3 link link-underline link-underline-black text-black dark:text-white">
-            <Link to="/guest">Guest Book</Link>
-          </a>
           <button className="px-8 py-3  ">Contact</button>
         </ul>
         <div
-          className=" ml-auto px-10 lg:hidden text-indigo-600"
+          className=" ml-auto px-10 lg:hidden text-teal-400"
           onClick={handleClick}
         >
           {!nav ? <MenuIcon className="w-5" /> : <XIcon className="w-5" />}
@@ -61,9 +58,6 @@ export const Navbar = () => {
           <a className="px-8 py-3 text-center link link-underline link-underline-black text-black dark:text-white">
             <Link to="/projects">Projects</Link>
           </a>{" "}
-          <a className="px-8 py-3 text-center link link-underline link-underline-black text-black dark:text-white">
-            <Link to="/guest">Guest Book</Link>
-          </a>
           <button className="px-10 py-3 text-center">Contact</button>
         </ul>
       </div>
