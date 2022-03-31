@@ -49,19 +49,19 @@ export const Navbar = () => {
           className={
             !nav
               ? "hidden"
-              : "bg-zinc-200 flex flex-col absolute w-screen top-20 gap-9 px-32 z-20 py-10"
+              : "bg-zinc-200 flex flex-col absolute w-screen top-20 gap-9 px-32 z-20 py-10 dark:bg-slate-900"
           }
         >
-          <a className="px-8 py-3 text-center link link-underline link-underline-black text-black">
+          <a className="px-8 py-3 text-center link link-underline link-underline-black text-black dark:text-white">
             <Link to="/about">About</Link>
           </a>
-          <a className="px-8 py-3 text-center link link-underline link-underline-black text-black">
+          <a className="px-8 py-3 text-center link link-underline link-underline-black text-black dark:text-white">
             <Link to="/skills">Skills</Link>
           </a>
-          <a className="px-8 py-3 text-center link link-underline link-underline-black text-black">
+          <a className="px-8 py-3 text-center link link-underline link-underline-black text-black dark:text-white">
             <Link to="/projects">Projects</Link>
           </a>{" "}
-          <a className="px-8 py-3 text-center link link-underline link-underline-black text-black">
+          <a className="px-8 py-3 text-center link link-underline link-underline-black text-black dark:text-white">
             <Link to="/guest">Guest Book</Link>
           </a>
           <button className="px-10 py-3 text-center">Contact</button>
