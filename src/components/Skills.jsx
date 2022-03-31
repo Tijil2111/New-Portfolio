@@ -11,7 +11,7 @@ import movie from "../assets/movie.jpeg";
 
 export const Skills = () => {
   return (
-    <div className="h-[100vh] pt-40" id="skills">
+    <div className="h-[200vh] pt-40 dark:bg-slate-900" id="skills">
       <div>
         <Fade triggerOnce>
           <h2 className="text-center">
@@ -26,10 +26,10 @@ export const Skills = () => {
               <div className="max-w-sm rounded overflow-hidden shadow-lg">
                 <img className="w-2/3 h-1/2" src={flutter} alt="Flutter"></img>
                 <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2 text-center">
+                  <div className="font-bold text-xl mb-2 text-center dark:text-white">
                     Flutter
                   </div>
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-700 text-base dark:text-white">
                     Building Apps with Flutter for Android is my main field of
                     interest. I have already made a few awesome apps and
                     recently published one on the Galaxy Store -
@@ -50,10 +50,10 @@ export const Skills = () => {
               <div className="max-w-sm rounded overflow-hidden shadow-lg">
                 <img className="w-2/3 h-1/2" src={react} alt="react"></img>
                 <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2 text-center">
+                  <div className="font-bold text-xl mb-2 text-center dark:text-white">
                     React.js
                   </div>
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-700 text-base dark:text-white">
                     Making websites with React.js is my love. I absolutely love
                     this framework. I have already made at least 3 websites with
                     this framework and tend to make more to improve my knowledge
@@ -75,10 +75,10 @@ export const Skills = () => {
                   alt="firebase"
                 ></img>
                 <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2 text-center">
+                  <div className="font-bold text-xl mb-2 text-center dark:text-white">
                     Firebase
                   </div>
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-700 text-base dark:text-white">
                     I am making use of this online database as a part of my
                     Flutter projects. I am also learning it with React.js. The
                     auth and the database is awesome. This was the database that
@@ -107,10 +107,10 @@ export const Skills = () => {
                   alt="Tailwind"
                 ></img>
                 <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2 text-center">
+                  <div className="font-bold text-xl mb-2 text-center dark:text-white">
                     Tailwind CSS
                   </div>
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-700 text-base dark:text-white">
                     When i wrote my own css it took days and even months to
                     complete a website and making them responsive was difficult
                     (at least for me). Tailwind is such an awesome library. I
@@ -132,10 +132,10 @@ export const Skills = () => {
                   alt="Movie Making"
                 ></img>
                 <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2 text-center">
+                  <div className="font-bold text-xl mb-2 text-center dark:text-white">
                     Movie Making
                   </div>
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-700 text-base dark:text-white">
                     Lights, Camera and Action ! Making videos and movies has
                     been a hobby for me since i was in primary school. Now when
                     i entered eSpice in high school, I learnt it professionally

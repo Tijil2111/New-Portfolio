@@ -1,25 +1,37 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Typer } from "../Extra/Typer";
 import { BsGithub, BsLinkedin, BsYoutube } from "react-icons/bs";
 import { FaAngleRight } from "react-icons/fa";
 import "../index.css";
 import { Outlet, Link } from "react-router-dom";
+import { Toast } from "../Extra/Toast";
 
 //BsGithub, BsLinkedin, BsYoutube, FaAngleDown
 
 export const Home = () => {
+  const [showToast, setShowToast] = useState(undefined);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowToast(true);
+    }, 4000);
+  });
+
+  const onClose = () => {
+    setShowToast(true);
+  };
   return (
-    <>
-      <div id="home" className="flex">
-        <div className="flex flex-col md:ml-14 ml-10 mt-64">
-          <h1 className="text-2xl py-2 flex md:text-5xl">
+    <div className="dark:bg-slate-900 h-[100vh]">
+      <div id="home" className="flex ">
+        <div className="flex flex-col md:ml-14 ml-10 mt-64 ">
+          <h1 className="text-2xl py-2 flex md:text-5xl dark:text-white">
             <span className="text-indigo-600 px-2 link link-underline link-underline-black">
               Konnichiwa!
             </span>
             I am Tijil Agrawal
           </h1>
-          <h2 className="flex md:text-4xl text-xl px-2">
+          <h2 className="flex md:text-4xl text-xl px-2 dark:text-white">
             I am
             <span className="px-2 text-indigo-600">
               <Typer />
@@ -45,7 +57,9 @@ export const Home = () => {
           </Link>
         </a>
       </div>
+      {/* {!showToast ? <Toast /> : <div></div>} */}
+      {!showToast ? <Toast close={onClose} /> : <div></div>}
       <Outlet />
-    </>
+    </div>
   );
 };

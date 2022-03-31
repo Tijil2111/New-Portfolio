@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 
 export const About = () => {
   return (
-    <div className="pt-40 h-[100vh]" id="about">
+    <div className="pt-40 h-[100vh] dark:bg-slate-900" id="about">
       <Fade delay={500} triggerOnce>
         <h2 className="text-center">
           <span className="text-3xl  text-indigo-600 link link-underline link-underline-black p-2">
@@ -22,13 +22,13 @@ export const About = () => {
             className="rounded-lg p-32 drop-shadow-2xl contrast-125 transform hover:transition duration-500 hover:scale-105"
           />
           <div className="flex flex-col lg:mt-36">
-            <h2 className="text-3xl text-center">
+            <h2 className="text-3xl text-center dark:text-white">
               I am an
               <span className="text-indigo-600 p-3 link link-underline link-underline-black">
                 Indian
               </span>
             </h2>
-            <blockquote className="p-10 text-center">
+            <blockquote className="p-10 text-center dark:text-white">
               <p>
                 I am a tech enthusiast with knowledge of various programming
                 languages and I love Maths and Physics. I was honoured when i

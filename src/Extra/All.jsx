@@ -6,6 +6,7 @@ import { About } from "../components/About";
 import { Projects } from "../components/Projects";
 import { Skills } from "../components/Skills";
 import { ErrorPage } from "../components/404";
+import { GuestBook } from "../components/GuestBook";
 
 export const All = () => {
   return (
@@ -18,6 +19,7 @@ export const All = () => {
             <Route path="skills" element={<Skills />} />
             <Route path="projects" element={<Projects />} />
             <Route path="*" element={<ErrorPage />}></Route>
+            <Route path="guest" element={<GuestBook />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
