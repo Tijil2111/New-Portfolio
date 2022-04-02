@@ -7,7 +7,7 @@ export const Contact = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   return (
-    <div className="dark:bg-slate-900 h-[100vh] pt-32">
+    <div className="dark:bg-slate-900  pt-32">
       <Fade delay={500} triggerOnce>
         <h2 className="text-center">
           <span className="text-3xl  text-teal-400 link link-underline link-underline-black p-2">

@@ -22,7 +22,7 @@ export const Home = () => {
     setShowToast(true);
   };
   return (
-    <div className="dark:bg-slate-900 h-[100vh]">
+    <div className="dark:bg-slate-900">
       <div id="home" className="flex ">
         <div className="flex flex-col md:ml-14 ml-10 mt-64 ">
           <h1 className="text-2xl py-2 flex md:text-5xl dark:text-white">

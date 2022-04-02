@@ -8,7 +8,7 @@ import Rirakkusu from "../assets/projects/rirakkusu.png";
 
 export const Projects = () => {
   return (
-    <div className="h-[140vh] pt-32 dark:bg-slate-900" id="projects">
+    <div className=" pt-32 dark:bg-slate-900" id="projects">
       <Fade delay={500} triggerOnce>
         <h2 className="text-center">
           <span className="text-3xl  text-teal-400 link link-underline link-underline-black p-2">
