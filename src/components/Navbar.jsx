@@ -33,7 +33,9 @@ export const Navbar = () => {
           <a className="px-8 py-3 link link-underline link-underline-black text-black dark:text-white">
             <Link to="/projects">Projects</Link>
           </a>
-          <button className="px-8 py-3  ">Contact</button>
+          <button className="px-8 py-3  ">
+            <Link to="/contact">Contact</Link>
+          </button>
         </ul>
         <div
           className=" ml-auto px-10 lg:hidden text-teal-400"
@@ -58,7 +60,10 @@ export const Navbar = () => {
           <a className="px-8 py-3 text-center link link-underline link-underline-black text-black dark:text-white">
             <Link to="/projects">Projects</Link>
           </a>{" "}
-          <button className="px-10 py-3 text-center">Contact</button>
+          <button className="px-10 py-3 text-center">
+            {" "}
+            <Link to="/contact">Contact</Link>
+          </button>
         </ul>
       </div>
       <Outlet />

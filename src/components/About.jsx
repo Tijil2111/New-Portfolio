@@ -1,10 +1,29 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../index.css";
 import pic from "../assets/pic.png";
 import { Fade } from "react-awesome-reveal";
 
 export const About = () => {
+  const [quote, setQuote] = useState("");
+  const [author, setAuthor] = useState("");
+
+  useEffect(() => {
+    const url = "https://api.quotable.io/random";
+
+    const fetchData = async () => {
+      try {
+        const response = await fetch(url);
+        const json = await response.json();
+        setQuote(json.content);
+        setAuthor(json.author);
+      } catch (error) {
+        setQuote("Error in API request");
+        setAuthor("Please Reload the page");
+      }
+    };
+    fetchData();
+  }, []);
   return (
     <div className="pt-40 h-[100vh] dark:bg-slate-900" id="about">
       <Fade delay={500} triggerOnce>
@@ -41,6 +60,8 @@ export const About = () => {
                 quote of all times.
               </p>
             </blockquote>
+            <div className="pt-10 text-center text-teal-400">{quote}</div>
+            <div className="p-2 text-center text-teal-400">-{author}</div>
           </div>
         </div>
       </Fade>

@@ -4,6 +4,7 @@ import "../index.css";
 
 //importing all images
 import Naruto from "../assets/projects/naruto.png";
+import Rirakkusu from "../assets/projects/rirakkusu.png";
 
 export const Projects = () => {
   return (
@@ -15,11 +16,17 @@ export const Projects = () => {
           </span>
         </h2>
       </Fade>
-      <div className="p-20 flex flex-col gap-20 justify-center md:flex-row">
+      <div className="p-20 flex flex-col gap-20 justify-center md:flex-row ">
         <div>
           <Fade delay={500} triggerOnce>
-            <div className="max-w-lg rounded-lg overflow-hidden shadow-lg  project pl-16">
-              <img className="w-auto h-auto" src={Naruto} alt="Naruto"></img>
+            <div className="pl-10 project">
+              <div className="max-w-lg rounded-lg overflow-hidden shadow-lg ">
+                <img
+                  className="w-[600px] h-2/3"
+                  src={Naruto}
+                  alt="Naruto"
+                ></img>
+              </div>
             </div>
             <div className="py-4">
               <div className="text-center text-teal-400">
@@ -37,23 +44,27 @@ export const Projects = () => {
             </div>
           </Fade>
         </div>
-
         <div>
           <Fade delay={500} triggerOnce>
-            <div className="max-w-lg rounded-lg overflow-hidden shadow-lg  project pl-16">
-              <img className="w-auto h-auto" src={Naruto} alt="Naruto"></img>
+            <div className="pl-10 project">
+              <div className="max-w-lg rounded-lg overflow-hidden shadow-lg ">
+                <img
+                  className="w-[600px] h-2/3uto"
+                  src={Rirakkusu}
+                  alt="Rirakkusu"
+                ></img>
+              </div>
             </div>
             <div className="py-4">
               <div className="text-center text-teal-400">
                 <a
-                  href="https://naruto-fan.netlify.app"
+                  href="https://galaxy.store/rirakkusu"
                   className="dark:text-teal-400 link link-underline link-underline-black p-2 text-xl  mb-2 "
                 >
-                  Naruto Fan Website
+                  Rirakkusu
                 </a>
                 <p className="mt-2">
-                  A small website to tribute, one of the greatest Manga and
-                  Anime of all time. Naruto
+                  An App that enables you to reduce stress, blog and much more !
                 </p>
               </div>
             </div>
