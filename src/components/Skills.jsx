@@ -11,7 +11,7 @@ import movie from "../assets/movie.jpeg";
 
 export const Skills = () => {
   return (
-    <div className="h-[200vh] pt-40 dark:bg-slate-900" id="skills">
+    <div className="md:h-[200vh] pt-40 dark:bg-slate-900" id="skills">
       <div>
         <Fade triggerOnce>
           <h2 className="text-center">

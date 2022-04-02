@@ -25,7 +25,7 @@ export const About = () => {
     fetchData();
   }, []);
   return (
-    <div className="pt-40 h-[100vh] dark:bg-slate-900" id="about">
+    <div className="pt-40 h-[150vh] dark:bg-slate-900" id="about">
       <Fade delay={500} triggerOnce>
         <h2 className="text-center">
           <span className="text-3xl  text-teal-400 link link-underline link-underline-black p-2">
