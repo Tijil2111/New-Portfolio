@@ -23,7 +23,7 @@ export const Skills = () => {
         <div className="p-20 card-row justify-center">
           <div className="flex flex-row gap-10 card-row">
             <Fade delay={500} triggerOnce>
-              <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <div className="max-w-sm rounded overflow-hidden shadow-lg h-[500px]">
                 <img className="w-2/3 h-1/2" src={flutter} alt="Flutter"></img>
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2 text-center dark:text-white">
@@ -47,7 +47,7 @@ export const Skills = () => {
               </div>
             </Fade>
             <Fade delay={1000} triggerOnce>
-              <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <div className="max-w-sm rounded overflow-hidden shadow-lg h-[500px]">
                 <img className="w-2/3 h-1/2" src={react} alt="react"></img>
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2 text-center dark:text-white">
@@ -68,9 +68,9 @@ export const Skills = () => {
               </div>
             </Fade>
             <Fade delay={1500} triggerOnce>
-              <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <div className="max-w-sm rounded overflow-hidden shadow-lg h-[500px]">
                 <img
-                  className="w-full h-full"
+                  className="w-max h-1/2"
                   src={firebase}
                   alt="firebase"
                 ></img>
@@ -100,7 +100,7 @@ export const Skills = () => {
         <div className="p-20 card-row justify-center">
           <div className="flex flex-row gap-10 card-row">
             <Fade delay={500} triggerOnce>
-              <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <div className="max-w-sm rounded overflow-hidden shadow-lg h-[500px]">
                 <img
                   className="w-full h-1/2"
                   src={tailwind}
@@ -125,9 +125,9 @@ export const Skills = () => {
               </div>
             </Fade>
             <Fade delay={1000} triggerOnce>
-              <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <div className="max-w-sm rounded overflow-hidden shadow-lg h-[500px]">
                 <img
-                  className="w-full h-1/2"
+                  className="w-auto h-1/2"
                   src={movie}
                   alt="Movie Making"
                 ></img>
@@ -136,12 +136,9 @@ export const Skills = () => {
                     Movie Making
                   </div>
                   <p className="text-gray-700 text-base dark:text-white">
-                    Lights, Camera and Action ! Making videos and movies has
-                    been a hobby for me since i was in primary school. Now when
-                    i entered eSpice in high school, I learnt it professionally
-                    with the help of my mentors. I really love to shoot and then
-                    edit. I have a large editing experience in industry level
-                    softwares like - Final Cut Pro, Adobe Premiere Pro, Adobe
+                    Lights, Camera and Action ! Making videos and movies is a
+                    hobby for me.I really love to shoot and then edit. I know
+                    softwares like Final Cut Pro, Adobe Premiere Pro, Adobe
                     After Effects and DaVinci Resolve 17.
                   </p>
                 </div>
